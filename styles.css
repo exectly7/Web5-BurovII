@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff; 
+}
+
+.weather-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: border-color 0.5s ease;
+}
+
+.weather-container h1,
+.weather-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+#inputSection {
+  margin-bottom: 20px;
+}
+#inputSection label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+#inputSection input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#inputSection button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+#inputSection button:hover {
+  background-color: #45a049;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  animation: pulse 1s infinite;
+}
+
+.error-message {
+  text-align: center;
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+.weather-result {
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+#weatherIcon {
+  width: 64px;
+  height: 64px;
+  margin: 10px auto;
+  display: block;
+}
+
+.weather-result p {
+  margin: 5px 0;
+}

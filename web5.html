@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Погода</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="weatherWidgetContainer" class="weather-container">
+    <h1>Погода</h1>
+    <div id="inputSection">
+      <label for="inputCityName">Введите название города:</label>
+      <input type="text" id="inputCityName" placeholder="Например, Москва">
+      
+      <p style="text-align: center; font-style: italic; margin: 10px 0;">ИЛИ</p>
+      
+      <label for="inputLatitude">Введите широту:</label>
+      <input type="text" id="inputLatitude" placeholder="Например, 55.7">
+      
+      <label for="inputLongitude">Введите долготу:</label>
+      <input type="text" id="inputLongitude" placeholder="Например, 37.6">
+      
+      <button id="buttonGetWeather">Получить погоду</button>
+    </div>
+    
+    <div id="loadingIndicator" class="loading" style="display: none;">Загрузка...</div>
+    
+    <div id="errorMessage" class="error-message" style="display: none;"></div>
+    
+    <div id="weatherResult" class="weather-result" style="display: none;">
+      <h2 id="weatherCityName"></h2>
+      <img id="weatherIcon" src="" alt="Иконка погоды">
+      <p id="weatherTemperature"></p>
+      <p id="weatherHumidity"></p>
+      <p id="weatherWindSpeed"></p>
+      <p id="weatherPressure"></p>
+      <p id="weatherUVIndex"></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
