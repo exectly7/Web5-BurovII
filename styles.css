@@ -13,7 +13,6 @@ body {
   border: 2px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: border-color 0.5s ease;
 }
 
 .weather-container h1,
@@ -47,7 +46,6 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
 }
 #inputSection button:hover {
   background-color: #45a049;
@@ -58,7 +56,6 @@ body {
   font-size: 18px;
   font-weight: bold;
   color: #555;
-  animation: pulse 1s infinite;
 }
 
 .error-message {
@@ -70,7 +67,6 @@ body {
 
 .weather-result {
   text-align: center;
-  animation: fadeIn 1s ease;
 }
 
 #weatherIcon {
